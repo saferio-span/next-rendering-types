@@ -1,0 +1,24 @@
+.links{
+  color: #00E0F3;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.links:hover{
+  color: white;
+}
+
+.links:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.links:hover:after {
+  width: 25%;
+  background: #00E0F3;
+}
+
