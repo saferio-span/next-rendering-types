@@ -6,10 +6,8 @@ import RealTime from "../../components/RealTime";
 
 export const getServerSideProps = async () => {
     const res = await axios.get('https://worldtimeapi.org/api/timezone/Asia/Kolkata');
-    console.log(`SSR`)
-    console.log(res.data.datetime)
     return {
-        props: { dateTime: res.data.datetime},
+        props: { dateTime: moment(res.data.datetime).format('hh:mm:ss A')},
     };
 };
 

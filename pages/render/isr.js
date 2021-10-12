@@ -8,7 +8,7 @@ export const getStaticProps = async()=>{
     const res = await axios.get('https://worldtimeapi.org/api/timezone/Asia/Kolkata');
     // moment(res.data.datetime).format('hh:mm:ss A')
     return {
-      props: { dateTime: res.data.datetime},
+      props: { dateTime: moment(res.data.datetime).format('hh:mm:ss A')},
       revalidate: 5,
     };
 }
