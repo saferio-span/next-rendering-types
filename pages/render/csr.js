@@ -11,7 +11,7 @@ const CsrPage = () => {
     useEffect(()=>{
         setLoading(true)
         axios
-        .get('https://worldtimeapi.org/api/ip')
+        .get('https://worldtimeapi.org/api/timezone/Asia/Kolkata')
         .then((res) => {
           setDateTime(moment(res.data.datetime).format('hh:mm:ss A'));
           setLoading(false)

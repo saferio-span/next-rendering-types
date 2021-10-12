@@ -3,11 +3,11 @@ import moment from 'moment';
 
 const RealTime = () => {
 
-    const [ctime,setCtime] = useState(moment().format('h:mm:ss A'))
+    const [ctime,setCtime] = useState(moment().format('hh:mm:ss A'))
 
     const updateTime = ()=>{
         
-        setCtime(moment().format('h:mm:ss A'))
+        setCtime(moment().format('hh:mm:ss A'))
     }
 
     setInterval(updateTime,1000)

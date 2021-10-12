@@ -5,7 +5,7 @@ import Layout from "../../components/Layout"
 import RealTime from "../../components/RealTime";
 
 export const getServerSideProps = async () => {
-    const res = await axios.get('https://worldtimeapi.org/api/ip');
+    const res = await axios.get('https://worldtimeapi.org/api/timezone/Asia/Kolkata');
     return {
       props: { dateTime: moment(res.data.datetime).format('hh:mm:ss A')},
     };
