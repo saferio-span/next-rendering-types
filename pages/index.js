@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className='text-white text-center pt-4 '>
           <Link href='render/ssg'>
-            <a className={style.links}>Server-Site Generation {`(SSG)`}</a>
+            <a className={style.links}>Static-Site Generation {`(SSG)`}</a>
           </Link>
         </div>
         <div className='text-white text-center pt-4 '>
