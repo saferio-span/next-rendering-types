@@ -13,7 +13,7 @@ const CsrPage = () => {
         axios
         .get('https://worldtimeapi.org/api/timezone/Asia/Kolkata')
         .then((res) => {
-          setDateTime(moment(res.data.datetime).format('hh:mm:ss A'));
+          setDateTime(res.data.datetime);
           setLoading(false)
         })
         .catch((error) => console.error(error));
@@ -28,7 +28,7 @@ const CsrPage = () => {
                         loading && 'Loading...'
                     }
                     {
-                        !loading && dateTime
+                        !loading && moment(dateTime).format('hh:mm:ss A')
                     }
                 </h1>
                 <Link href="/" passHref={true}>
