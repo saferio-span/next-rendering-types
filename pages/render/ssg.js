@@ -7,7 +7,7 @@ import RealTime from "../../components/RealTime";
 export const getStaticProps = async()=>{
     const res = await axios.get('https://worldtimeapi.org/api/ip');
     return {
-      props: { dateTime: moment(res.data.datetime).format('h:mm:ss A')},
+      props: { dateTime: moment(res.data.datetime).format('hh:mm:ss A')},
     };
 }
 
