@@ -20,7 +20,7 @@ const SsgPage = ({dateTime}) => {
                 <h6 className="mt-3 text-warning">Data will not change because the API will be hit ONLY when the application is building </h6>
                 <h6 className="text-warning"> which is why the time shown is the same for each reloads.</h6>
                 <h1 className="text-info mt-3">
-                     {moment(dateTime).format('hh:mm:ss A')}
+                     {moment(dateTime).format('MMMM Do YYYY, hh:mm:ss A')}
                 </h1>
                 <Link href="/" passHref={true}>
                     <button className="btn btn-outline-danger mt-3 px-3">Back</button>

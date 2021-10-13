@@ -21,7 +21,7 @@ const IsrPage = ({dateTime}) => {
                 <h3>ISR - Incremental-Static Regeneration </h3>
                 <h6 className="mt-3 text-warning">The page is same as Static site generation...But it rebuilds the page after cooldown time which is specified</h6>
                 <h1 className="text-info mt-3">
-                     {moment(dateTime).format('hh:mm:ss A')}
+                     {moment(dateTime).format('MMMM Do YYYY, hh:mm:ss A')}
                 </h1>
                 <Link href="/" passHref={true}>
                     <button className="btn btn-outline-danger mt-3 px-3">Back</button>

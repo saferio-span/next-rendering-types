@@ -19,7 +19,7 @@ const SsrPage = ({ dateTime }) => {
                 <h3>SSR - Server-Side Rendering </h3>
                 <h6 className="mt-3 text-warning">Data is fetched from the API before the page loads</h6>
                 <h1 className="text-info mt-3">
-                     {moment(dateTime).format('hh:mm:ss A')}
+                     {moment(dateTime).format('MMMM Do YYYY, hh:mm:ss A')}
                 </h1>
                 <Link href="/" passHref={true}>
                     <button className="btn btn-outline-danger mt-3 px-3">Back</button>
